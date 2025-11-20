@@ -1,6 +1,9 @@
 <script lang="ts" setup>
+const { proxy } = useScriptGoogleAnalytics();
 function handleGoogleAnalytics(): void {
-    console.log('Google analytics');
+    proxy.gtag('event', 'click_button', {
+        id: 123456,
+    });
 }
 </script>
 
