@@ -1,28 +1,13 @@
-<script setup>
-useHead({
-    script: [
-        {
-            async: true,
-            src: 'https://www.googletagmanager.com/gtag/js?id=G-GTLCCYZPCS',
-        },
-    ],
-});
-
-useHead({
-    script: [
-        {
-            innerHTML: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-GTLCCYZPCS');
-            `,
-        },
-    ],
-});
-</script>
+<script setup></script>
 
 <template>
+    <!-- <noscript
+        ><iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-PHRB73S8"
+            height="0"
+            width="0"
+            style="display: none; visibility: hidden"></iframe
+    ></noscript> -->
     <NuxtLayout>
         <NuxtPage />
     </NuxtLayout>

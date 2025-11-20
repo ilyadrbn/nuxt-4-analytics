@@ -1,12 +1,16 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
     devtools: { enabled: true },
     modules: ['@nuxt/scripts'],
-    scripts: {
-        registry: {
-            googleAnalytics: {
-                id: 'G-GTLCCYZPCS',
+    $production: {
+        scripts: {
+            registry: {
+                googleAnalytics: {
+                    id: 'G-GTLCCYZPCS',
+                },
+                googleTagManager: {
+                    id: 'GTM-PHRB73S8',
+                },
             },
         },
     },
