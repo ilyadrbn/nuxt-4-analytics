@@ -2,7 +2,10 @@
 const { proxy } = useScriptGoogleAnalytics();
 function handleGoogleAnalytics(): void {
     proxy.dataLayer.push({
-        event: 'click_button_analytics',
+        event: 'click_button_analytics_dl',
+        button_id: 123456,
+    });
+    proxy.gtag('event', 'click_button_analytics_gtag', {
         button_id: 123456,
     });
 }
