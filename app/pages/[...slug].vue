@@ -1,11 +1,7 @@
 <script lang="ts" setup>
 const { proxy } = useScriptGoogleAnalytics();
 function handleGoogleAnalytics(): void {
-    proxy.dataLayer.push({
-        event: 'click_button_analytics_dl',
-        button_id: 123456,
-    });
-    proxy.gtag('event', 'click_button_analytics_gtag', {
+    proxy.gtag('event', 'click_button_analytics_ga4', {
         button_id: 123456,
     });
 }

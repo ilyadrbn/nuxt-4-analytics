@@ -8,9 +8,6 @@ export default defineNuxtConfig({
                 googleAnalytics: {
                     id: 'G-GTLCCYZPCS',
                 },
-                googleTagManager: {
-                    id: 'GTM-PHRB73S8',
-                },
             },
         },
     },
